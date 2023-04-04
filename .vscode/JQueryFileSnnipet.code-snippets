@@ -1,0 +1,82 @@
+{
+	// Place your JQuery workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	// "myj": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "JQuery boilerPlate",
+	// 	"body": [
+			
+	// 	],
+	// 	"description": "JQuery Full  boilerPlate code for repatitive code"
+	// },
+	
+	"JQuery boilerPlate" : {
+		"prefix": "myjq",
+		"body": [
+		  "<!DOCTYPE html>",
+		  "<html lang=\"en\">",
+		  "<head>",
+		  "    <meta charset=\"UTF-8\">",
+		  "    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+		  "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+		  "    <title>Mouse Events</title>",
+		  "    <script src=\"https://code.jquery.com/jquery-3.6.4.min.js\" ",
+		  "    integrity=\"sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=\" ",
+		  "    crossorigin=\"anonymous\"></script>",
+		  "    <style>",
+		  "        #box1{",
+		  "            color:brown;",
+		  "            width:100%;",
+		  "            height: 250px;",
+		  "            padding: 10px;",
+		  "            margin-top:5px;",
+		  "            box-sizing: border-box;",
+		  "            background-color:lightgrey;",
+		  "            border: 2px solid dark;",
+		  "            border-radius: 3px;",
+		  "            background-size: cover;",
+		  "        }",
+		  "    </style>",
+		  "</head>",
+		  "<body>",
+		  "    <div id=\"container\">",
+		  "        <h1>This is the Mouse Events in jQuery</h1>",
+		  "        <div id=\"box1\">",
+		  "            <h1>Test Box 1</h1>",
+		  "            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima fugit ",
+		  "            consequuntur laudantium dolorem iste voluptatem, autem ut itaque? Consectetur, aut.</p>",
+		  "",
+		  "        </div>",
+		  "    </div>",
+		  "    <script>",
+		  "        $(document).ready(()=>{",
+		  "            $('#box1').click(()=>{",
+		  "                //$('#box1').css('background-color','lightgreen');",
+		  "                //if we want to take variable",
+		  "                let vai = $('#box1').html();",
+		  "                console.log(vai);",
+		  "            })",
+		  "        })",
+		  "    </script>",
+		  "</body>",
+		  "</html>",
+		  ""
+		],
+		"description": "JQuery Full  boilerPlate code for repatitive code"
+	  }
+}

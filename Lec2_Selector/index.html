@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="container">
+        <h1>Selector Jquery learning 1</h1>
+        <div id="box1">
+            <h2>Selector box 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eligendi eveniet, 
+            nostrum recusandae vel inventore numquam sapiente!Commodi labore quidem in iure ex id! 
+            Sed cumque fugit quasi dolores officiis?</p>
+        </div>
+        <div id="box2">
+            <ul id="list">
+                <li>Orange</li>
+                <li class="liText1">Blue</li>
+                <li>Green</li>
+                <li>Red</li>
+                <li class="liText1">Apple</li>
+            </ul>
+
+        </div>
+
+
+    </div>
+    <script>
+        $(document).ready(()=>{
+            let va1 = $(box1).html();
+            console.log(va1);
+            // let var2 = $('li:first-child').css('border','2px solid red');
+            //  let var2 = $('li').css('border','2px solid red');
+            // let var2 = $('*').css('border','2px solid red');
+            // let var2 = $('li:first').css('border','2px solid red');
+            // let var2 = $('li:last').css('border','2px solid red');
+            //any list by you choice of line no from 0 index start is do like this...
+            // $('ul li:eq(3)').css('border','2px solid red');
+            //this will tell that greater then the no will be changed show
+            // $('ul li:gt(2)').css('border','2px solid red');b
+            //this will tell that lower then the no will be changed show
+            $('ul li:lt(3)').css('border','2px solid red');
+
+
+        })
+    </script>
+
+</body>
+</html>

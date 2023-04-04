@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Methods </title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+    crossorigin="anonymous"></script>
+    <style>
+        body{ font-family:arial;}
+        #box1{
+            color:brown;
+            width:100%;
+            height: 250px;
+            padding: 10px;
+            margin-top:5px;
+            box-sizing: border-box;
+            background-color:lightgrey;
+            border: 2px solid dark;
+            border-radius: 3px;
+            background-size: cover;
+        }
+
+        #container{
+            color:brown;
+            width:100%;
+            height: 350px;
+            padding: 10px;
+            margin-top:10px;
+            box-sizing: border-box;
+            background-color:lightgrey;
+            border: 2px solid dark;
+            border-radius: 3px;
+            background-size: cover;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-evenly;
+            align-items: center;
+            align-self:stretch;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding:3px;
+            /* text-align: center; */
+            /* border:2px solid blue; */
+            /* border:none; */
+        }
+        form label, input, select{
+            padding:5px;
+            border-radius:4px;
+            border:none;
+            color:rgb(2, 250, 209);
+            font-weight:bold;
+            background-color: rgb(44, 97, 97);
+            margin:3px;
+            /* border: none; */
+            /* text-align: center; */
+        }
+        select{
+            background-color:rgb(67, 65, 11);
+            font-family: Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="containers" >
+        <h1>jQuery Get Method</h1>
+        <div id="box1" class="boxTest abc">
+            <h1>Test Box 1</h1>
+            <p>Lorem ipsum, dolor <span>Hello to all lorem </span> sit amet consectetur adipisicing elit. Minima fugit 
+            consequuntur laudantium dolorem iste voluptatem, autem ut itaque? Consectetur, aut.</p>
+        </div>
+    </div>
+    <div id="container">
+        <form action="" id="sformId">
+            <label for="">Name</label>
+            <input type="email" id="sEmail" required placeholder="Enter you Email">
+            <label for="">Class</label>
+            <input type="text" id="sClass" placeholder="Write something ">
+            <label for="">Country</label>
+            <select name="sCountryName" id="sCountryName">
+                <option value="India">India</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Nepal">Nepal</option>
+                <option value="SriLanka">SriLanka</option>
+            </select>
+            <!-- <br><br> -->
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </div>
+    <script>
+        $(document).ready(()=>{
+           $('#box1').click(function(){
+            //this is only returning the text element...
+                let i =  $(this).text();
+                // alert(`show message ${i}`);
+            });
+            //this is returning the bcz html DOM Events
+            let j = $('#box1').html();
+            console.log(j);
+
+
+            //attr this will 
+            //we can check what are the class name using this attributes
+            let storeAttr = $('#box1').attr('class');
+            console.log(storeAttr);
+
+            //this is the var method...val to fetch 
+            //all the data inside it
+            $('#sformId').submit(function(){
+                let data = $('#sEmail').val();
+                alert(data);
+                let data1 = $('#sClass').val();
+                alert(data1);
+                let data2 = $('#sCountryName').val();
+                alert(data2);
+            })
+        });
+    </script>
+</body>
+</html>

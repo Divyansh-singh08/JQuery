@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lec1</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+     integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Lec 1 Jquery</h1>
+    <div class="container">
+        <div id="test1">
+            <h2>Test 1</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit
+            </p>
+    
+        </div>
+        <div id="test2">
+            <h2>Test 2</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Sed reiciendis in ratione qui. Nihil nobis qui delectus 
+            </p>
+        </div>
+    </div>
+ 
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(()=>{
+            console.log("HELLO Jquery");
+            var st = $('#test1').html();
+            console.log(st);
+            var a = $('#test2').html();
+            console.log(a);
+        });
+    </script>
+</body>
+</html>

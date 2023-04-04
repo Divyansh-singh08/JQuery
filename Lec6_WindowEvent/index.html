@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+    crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color: cadetblue;
+        }
+        #container{
+            margin-left:3px;
+            /* padding:0px; */
+            background-color: rgb(144, 161, 162);
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+            margin: 20px;
+            border:2px solid red;
+            padding-bottom: 30px;
+            color:rgb(46, 36, 99);
+        }
+        #box1{
+            color:rgb(42, 165, 75);
+            width:70%;
+            height: 12em;
+            padding: 10px;
+            margin-top:5px;
+            box-sizing: border-box;
+            background-color:rgb(41, 11, 11);
+            border: 2px solid blueviolet;
+            border-radius: 5px;
+            background-size: cover;
+            overflow:auto;
+            
+
+        }
+        #box1 h1{
+            text-align: center;
+            color:rgba(247, 251, 3, 0.993);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>jQuery Window Events</h1>
+        <div id="box1">
+            <h1>Test Box </h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima fugit 
+            consequuntur laudantium dolorem iste voluptatem, autem ut itaque? Consectetur, aut.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam fugiat totam neque 
+            in atque nesciunt ex itaque iusto veritatis quo suscipit, assumenda reiciendis eius 
+            consequatur animi corrupti excepturi sed debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptas architecto magnam
+             delectus officia ipsa molestiae repudiandae id neque cupiditate. Voluptas, earum?
+            </p>
+
+        </div>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptate voluptatum perspiciatis magni esse rerum dicta praesentium itaque, doloremque, beatae deleniti nam, at veritatis eaque sint nesciunt quaerat explicabo distinctio
+        fuga minima reiciendis labore id suscipit! Voluptatum, maiores impedit! Repellat dignissimos deserunt reiciendis dolorem quia voluptatum in vel est dolore nulla iure suscipit natus corrupti molestias, distinctio, debitis laborum 
+        quos iste adipisci laboriosam ratione enim assumenda et dolor. Similique, delectus magnam. Doloribus beatae temporibus corporis quod sunt officia atque cumque ipsum illo voluptatem molestias esse quidem distinctio quisquam recusandae exercitationem, totam dolorem ut quo culpa nostrum placeat hic expedita? Deserunt dignissimos ad aliquid officiis earum ullam hic rem labore qui sapiente inventore laborum, nobis sint vero at blanditiis exercitationem! Quos perferendis nihil dolor aperiam at blanditiis vel praesentium natus atque eius, similique voluptatibus ullam culpa hic molestiae, tempora dolore reprehenderit. Rem, consequuntur fuga.
+        Sapiente animi quibusdam officia facilis at. Omnis deleniti nostrum 
+        doloribus facilis qui fugit! Laudantium, repellat dignissimos,
+        nam esse velit dolor adipisci deserunt fugiat unde ipsa doloremque
+        consectetur soluta et autem libero voluptate? Laboriosam blanditiis
+        iusto nobis minima, itaque deserunt numquam at corrupti possimus
+        ipsum ipsam hic veniam! Recusandae nesciunt id consequatur quas at 
+        veniam, iusto ducimus ex!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Officiis repellat voluptatem aspernatur perspiciatis maxime, 
+        recusandae sed voluptatum provident molestiae amet assumenda 
+        iure sint similique neque doloremque at magni doloribus 
+        quisquam cum nam! Animi vel asperiores possimus recusandae 
+        consequuntur eius cum quas, eum optio deleniti non explicabo 
+        quo, laborum laboriosam nemo ut aspernatur molestiae! Dolore, 
+        laudantium dignissimos eaque sequi, eos quisquam cumque 
+        officia fugiat, id minima iure mollitia dicta deleniti? 
+        Atque, minus architecto totam qui illo accusantium itaque
+        recusandae, minima rem dolor sit! Debitis nostrum delectus, 
+        accusantium aspernatur inventore aliquid dicta quasi, 
+        voluptatibus quo esse nam consequuntur cupiditate dignissimos?
+        In eos architecto odit eaque est ullam explicabo quae 
+        obcaecati et non assumenda optio quos tempora molestiae 
+        perspiciatis, rem illum aliquid? Quis hic esse laboriosam 
+        ratione? Distinctio nulla, rerum alias vel dolorem commodi 
+        placeat inventore quos eveniet magnam ea mollitia in aliquam 
+        adipisci dolore sit ab ratione numquam reiciendis eligendi 
+        deserunt quod totam repudiandae? Iusto sequi autem nulla 
+        quidem in voluptate magni a placeat tenetur beatae odit 
+        exercitationem, eius quasi expedita dolore debitis aut 
+        aliquid quis animi deserunt? Pariatur eveniet deleniti 
+        officiis, amet officia corporis, ratione illum in, harum 
+        quia adipisci. Natus nostrum officia vel reprehenderit ea 
+        error, dolores adipisci provident quidem! Eveniet quod 
+        officia ipsa fugit doloribus fugiat, quo necessitatibus 
+        sapiente, autem quaerat totam nisi corporis esse iure, 
+        eius expedita. Modi eius quaerat voluptatum quis. Magnam 
+        fugiat veritatis commodi a explicabo, consequuntur quos 
+        reiciendis. Maxime, corrupti! Nesciunt, sit quod numquam 
+        consequatur sunt a, tenetur impedit obcaecati accusantium
+        vel esse adipisci quas officia tempora quia eos nihil 
+        beatae libero in. Totam delectus fuga in nemo cumque. 
+        Laboriosam iste illo, nobis reprehenderit, iure 
+        exercitationem aliquid neque ratione perferendis 
+        fuga non vero voluptatibus provident animi minima tempore 
+        adipisci asperiores. Aut quibusdam consequatur esse. 
+        Doloribus dicta tenetur ducimus quisquam nostrum quasi 
+        impedit cumque quam! Esse culpa voluptatum rem. Eveniet 
+        laboriosam laudantium officiis vero, nostrum ipsa, beatae 
+        eaque a minus ratione, error nesciunt. Rerum, aliquam 
+        aliquid quam, quibusdam eos minima blanditiis tempore 
+        similique, iusto corporis quos distinctio laborum 
+    </p>
+    <script>
+        $(document).ready(()=>{
+            $('#box1').scroll(function(){
+                console.log(`Yor are super Learner..`);
+            });
+
+            //this is help in resizing the window.... 
+            $('window').resize(function(){
+                console.log(`Yor are super Learner..`);
+            });
+        })
+    </script>
+</body>
+</html>

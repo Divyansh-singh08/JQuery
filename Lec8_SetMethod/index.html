@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+    crossorigin="anonymous"></script>
+    <style>
+        #databox{
+            color:brown;
+            width:100%;
+            height: 250px;
+            padding: 10px;
+            margin-top:5px;
+            box-sizing: border-box;
+            background-color:lightgrey;
+            border: 2px solid dark;
+            border-radius: 3px;
+            background-size: cover;
+        }
+        #setBtn{
+            padding:8px;
+            margin-left:1px;
+            font-weight: 550;
+            font-size: 14px;
+            width:15%;
+            color:tomato;
+            background-color:purple;
+            border:none;
+            border-radius:3px;
+            cursor: pointer;
+
+        }
+        .red{
+            color:rgb(57, 56, 56);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #sform {
+            padding:20px;
+            margin:2px;
+            display: flex;
+            flex-direction: column;
+            justify-content:flex-start;
+            width:30%;
+            font-size:500;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Set Method data in jQuery</h1>
+        <div id="databox">
+            <h1>Test Box 1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima fugit 
+            consequuntur laudantium dolorem iste voluptatem, autem ut itaque? Consectetur, aut.</p>
+
+        </div>
+    </div>
+    <br>
+    <button id="setBtn">Set Value</button>
+    <hr><br>
+    <form id="sform">
+        <label name="sName">Name</label>
+        <input type="text" id="sName">
+        <label name="sEmail">Email</label>
+        <input type="email" name="sEmail" id="sEmail">
+        <input type="submit">
+    </form>
+
+    <script>
+        $(document).ready(()=>{
+            $('#setBtn').click(()=>{
+               $('#databox h1').text('Divyansh Blog');
+
+               $('#databox p').html('<u>Divyansh</u> Blog is the greate blog to write and read in the universe and also give the write information to the youth and keep inspiring to them about there Culture and promote the <b>Hindu Sanatan</b>');
+
+
+               $('#databox p').attr('class','red');
+
+            });
+        })
+        $(document).ready(function(){
+            $('#sName').val('Dm Singh');
+            $('#sEmail').val('dmsingh@gmail.com');
+        });
+    </script>
+</body>
+</html>
