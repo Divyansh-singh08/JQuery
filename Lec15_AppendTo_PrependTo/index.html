@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+    crossorigin="anonymous"></script>
+    <style>
+        #box1{
+            color:rgb(134, 75, 75);
+            width:100%;
+            height: 250px;
+            padding: 10px;
+            margin-top:5px;
+            box-sizing: border-box;
+            background-color:rgb(211, 211, 211);
+            border: 2px solid dark;
+            border-radius: 3px;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>AppendTo and PrependTo Events in jQuery</h1>
+        <div id="box1">
+            <h1>Test Box 1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima fugit 
+            consequuntur laudantium dolorem iste voluptatem, autem ut itaque? Consectetur, aut.
+            different between append here..#################################
+            $(selector).append(content) and appendTo $(content).appendTo(selector)
+            **************************************************************
+            $(selector).prepend(content) and prependTo $(content).prependTo(selector)
+        </p>
+
+        </div>
+        <button id="1btn">AppendTo</button>
+        <button id="2btn">PrependTo</button>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('#1btn').click(function(){
+                $(`<h1>Hello world me appendTo </h1>`).appendTo('#container');
+            });
+
+            $('#2btn').click(function(){
+                $(`<h1>Hello world me prependTo </h1>`).prependTo('#container');
+            });
+        })
+    </script>
+</body>
+</html>

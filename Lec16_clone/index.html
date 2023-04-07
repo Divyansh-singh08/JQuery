@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Events</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+    crossorigin="anonymous"></script>
+    <style>
+        #box1{
+            color:brown;
+            width:60%;
+            height: 300px;
+            padding: 22px;
+            margin-top:5px;
+            box-sizing: border-box;
+            background-color:lightgrey;
+            border: 2px solid green;
+            border-radius: 3px;
+            background-size: cover;
+            margin-left:50px;
+        }
+        #box2{
+            color:rgb(61, 3, 252);
+            width:60%;
+            height: 300px;
+            padding: 22px;
+            margin-top:45px;
+            box-sizing: border-box;
+            background-color:rgb(135, 175, 99);
+            border: 2px solid purple;
+            border-radius: 10px;
+            background-size: cover;
+            margin-left:50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Clone method in jQuery</h1>
+        <div id="box1">
+            <h2>Test Box 1</h2>
+            
+            <p>In Jquery there is the Clone() Method which copy the object
+               into another file or any other place...
+            </p>
+
+        </div>
+
+        <div id="box2">This is the other Div i made for learning the clone method</div>
+        <input id="btnclone" type="submit" value="Clone">
+
+    </div>
+    <script>
+        $(document).ready(()=>{
+            $('#btnclone').click(()=>{
+                $('#box1 h2').clone().prependTo ('#box2');
+                $('#box1 p').clone().appendTo('#box2');
+            })
+        })
+    </script>
+</body>
+</html>
